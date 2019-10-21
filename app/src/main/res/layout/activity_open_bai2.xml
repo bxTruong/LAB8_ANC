@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".OpenBai2">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Nắng Ấm Xa Dần"
+        android:textSize="22sp"></TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/startTimeField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekBar"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:text="0.0"
+            android:textSize="18sp"></TextView>
+
+        <TextView
+            android:id="@+id/endTimeField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekBar"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:text="3.45"
+            android:textSize="18sp"></TextView>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/pauseButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="16dp"
+            android:onClick="pause"
+            android:src="@drawable/ic_pause_black_24dp"></ImageView>
+
+        <ImageView
+            android:id="@+id/playButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="16dp"
+            android:onClick="play"
+            android:src="@drawable/ic_play_arrow_black_24dp"></ImageView>
+
+        <ImageView
+            android:layout_marginRight="16dp"
+            android:id="@+id/forWardButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:onClick="forward"
+            android:src="@drawable/ic_fast_forward_black_24dp"></ImageView>
+
+        <ImageView
+            android:id="@+id/stopButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:onClick="stop"
+            android:src="@drawable/ic_fiber_manual_record_black_24dp"></ImageView>
+    </LinearLayout>
+
+
+</LinearLayout>
