@@ -46,12 +46,10 @@ public class OpenBai2 extends AppCompatActivity {
         startTimeField = findViewById(R.id.startTimeField);
         endTimeField = findViewById(R.id.endTimeField);
 
-
         mediaPlayer = MediaPlayer.create(this, R.raw.abc);
 
         seekBar.setClickable(false);
         pauseButton.setEnabled(false);
-
 
     }
 
